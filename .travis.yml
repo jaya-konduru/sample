@@ -1,0 +1,10 @@
+language: php
+php:
+  - 5.4
+before_script:
+  - cd /home/travis/build/
+  - git clone https://neekipatel:ba196000ee3f015bda5f6ed62a81c113267f3562@github.com/aenetworks/aetn.pmoqa.web.git aenetworks/aetn.pmoqa.web
+  - cd aenetworks/aetn.pmoqa.web
+script:
+  - /home/travis/build/aenetworks/aetn.pmoqa.web/vendor/bin/sauce_config jkonduru 819eb1ee-41c8-43c0-967b-5c818b0953b4
+  - phpunit /home/travis/build/aenetworks/aetn.pmoqa.web/tests/prefcenter/PrefCenterEmailSignup.php
