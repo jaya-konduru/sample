@@ -1,0 +1,27 @@
+{
+  "capabilities":
+  [
+    {
+      "browserName": "chrome",
+      "platform": "WINDOWS",
+      "maxInstances": 10,
+      "seleniumProtocol": "WebDriver",
+      "webdriver.chrome.driver": "C:/Selenium/bkp/chromedriver.exe"
+    }
+  ],
+  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+  "maxSession": 10,
+  "port": 5555,
+  "register": true,
+  "registerCycle": 5000,
+  "hub": "http://172.30.0.77:4444",
+  "nodeStatusCheckTimeout": 5000,
+  "nodePolling": 5000,
+  "role": "node",
+  "unregisterIfStillDownAfter": 60000,
+  "downPollingLimit": 2,
+  "debug": false,
+  "servlets" : [],
+  "withoutServlets": [],
+  "custom": {}
+}
